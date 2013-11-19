@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>{{ page.title }}</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" id="twentytwelve-fonts-css" href="http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&amp;subset=latin,latin-ext" type="text/css" media="all">
+        <!-- syntax highlighting CSS -->
+        <link rel="stylesheet" href="/css/syntax.css">
+
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="/style.css">
+
+    </head>
+    <body>
+<div id="page" class="hfeed site">
+  <header id="masthead" class="site-header" role="banner">
+    <hgroup>
+      <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">{{ site.name }}</a></h1>
+      <h2 class="site-description">Tengo muchas cosas en la cabeza… sobre todo punteros a null</h2>
+    </hgroup>
+    <nav id="site-navigation" class="main-navigation" role="navigation">
+      <h3 class="menu-toggle">Menú</h3>
+      <div class="nav-menu">
+        <ul>
+          <li class="page_item"><a href="/">Inicio</a></li>
+          <li class="page_item"><a href="/acerca-de.html">Acerca de</a></li>
+        </ul>
+      </div>
+    </nav>
+</header>
+    <div id="main" class="wrapper">
+          {{ content }}
+
+          <div class="footer">
+            <div class="contact">
+              <p>
+                Your Name<br />
+                What You Are<br />
+                you@example.com
+              </p>
+            </div>
+            <div class="contact">
+              <p>
+                <a href="https://github.com/yourusername">github.com/yourusername</a><br />
+                <a href="https://twitter.com/yourusername">twitter.com/yourusername</a><br />
+              </p>
+            </div>
+          </div>
+        </div>
+
+    </body>
+</html>
