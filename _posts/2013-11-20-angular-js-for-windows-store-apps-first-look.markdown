@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Angular.js for Windows Store apps: First look"
-date: 2013-11-20
+date: 2013-11-20 20:00
 published: true
 comments: true
 ---
@@ -16,8 +16,8 @@ For this project, the first step is to create an empty Windows 8 application wit
 
 To include **Angular.js**, we could think about linking it from the Angular CDN to our default.html file:
 
-{% highlight html %}}<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular.min.js">
-</script> {% endhighlight %}}
+{% highlight html %}<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.1/angular.min.js">
+</script> {% endhighlight %}
 
 However, this cause the following error:
 
@@ -41,17 +41,17 @@ With this slight change, we can now run our application.
 
 To display information on the screen, rather than build the HTML manually and edit the DOM from javascript code, we simply use certain conventions for embedding data within an HTML template.
 
-{% highlight html %}}
-{% raw %}}
+{% highlight html %}
+{% raw %}
 <label>Name:</label>
 <input type="text" ng-model="yourName" placeholder="Enter a name here" />
 <h1>Hello {{yourName}}!</h1>
-{% endraw %}}
-{% endhighlight %}}
+{% endraw %}
+{% endhighlight %}
 
 In this case, the input generates a variable called **yourName**, and updates the <strong>h1</strong> header field, inside the curly braces. These fields with braces can also be used within html elements, for example, to set the "src" property of an image:
 
-{% highlight javascript %}} {% raw %}}<img src="{{item}}" /> {% endraw %} {% endhighlight %}}}
+{% highlight javascript %} {% raw %}<img src="{{item}}" /> {% endraw %} {% endhighlight %}
 
 We don't have to worry about the update process, since changing the content of the data causes that what is showing on the screen gets rendered again to show the update. This represents a difference quite interesting with respect to other frameworks such as Knockout, where we needed to define a very specific type of object (**ko.observable**) for having this feature.
 
@@ -126,11 +126,11 @@ We can include this code in our controller, so it's executed when we load it. If
 ![Http error]({{site.url}}/assets/errorHttp.png)
 
 To avoid this error, we'll have to modify the definition of our controller:
-{% highlight javascript %} function TodoCtrl ($scope) {% endhighlight %}}
+{% highlight javascript %} function TodoCtrl ($scope) {% endhighlight %}
 
 So now in addition to $scope, we need to add $http:
 
-{% highlight javascript %} function TodoCtrl ($scope, $http) {% endhighlight %}}
+{% highlight javascript %} function TodoCtrl ($scope, $http) {% endhighlight %}
 
 # Recap
 

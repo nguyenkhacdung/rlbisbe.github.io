@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Angular.js para aplicaciones Windows Store: Primeras impresiones"
-date: 2013-11-20
+date: 2013-11-20 9:00
 published: true
 comments: true
 ---
