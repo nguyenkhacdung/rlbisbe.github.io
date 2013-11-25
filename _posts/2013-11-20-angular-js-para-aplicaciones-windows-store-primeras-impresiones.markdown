@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Angular js para aplicaciones Windows Store: Primeras impresiones"
-date: 2013-11-20
-published: false
+title: "Angular.js para aplicaciones Windows Store: Primeras impresiones"
+date: 2013-11-20 9:00
+published: true
 comments: true
 ---
 
@@ -44,12 +44,12 @@ Para mostrar información por pantalla, en vez de construir el HTML manualmente 
 {% highlight html %}
 {% raw %}
 <label>Name:</label>
-<input type="text" placeholder="Enter a name here" />
+<input type="text" ng-model="yourName" placeholder="Enter a name here" />
 <h1>Hello {{yourName}}!</h1>
 {% endraw %}
 {% endhighlight %}
 
-En este caso, el input genera una variable de nombre yourName, que se actualiza en el campo <strong>h1</strong>, en la región habilitada para ello. Estas variables con corchetes se pueden usar también dentro de los elementos html, por ejemplo para fijar la propiedad "src" de una imagen:.
+En este caso, el input genera una variable de nombre yourName, que se actualiza en el campo <strong>h1</strong>, en la región habilitada para ello. Estas variables encerradas entre llaves se pueden usar también dentro de los elementos html, por ejemplo para fijar la propiedad "src" de una imagen:.
 
 {% highlight javascript %} {% raw %}<img src="{{item}}" /> {% endraw %}{% endhighlight %}
 
@@ -78,8 +78,8 @@ En este ejemplo se define un controlador, un campo llamado **todos**, y un méto
 {% highlight html %}
 {% raw %}
 <h2>Todo</h2> {{todos.length}}
-<form>
-	<input type="text" placeholder="add new todo here" size="30" />
+<form ng-submit="addTodo()">
+	<input type="text" ng-model="todoText" placeholder="add new todo here" size="30" />
 	<input class="btn-primary" type="submit" value="add" />
 </form>
 {% endraw %}
@@ -121,6 +121,8 @@ $http({ method: 'GET', url: 'http://url' }).
 {% endhighlight %}
 
 Este código lo incluiremos en nuestro controlador sin llamadas adicionales, de tal manera que sea ejecutado al cargar el controlador. Si lo hacemos de esta manera nos encontraremos con un bonito error como el que se muestra a continuación: 
+
+![Http error]({{site.url}}/assets/errorHttp.png)
 
 Para evitar ese error, hemos de modificar la definición de nuestro controlador:
 {% highlight javascript %}function TodoCtrl($scope){% endhighlight %}
