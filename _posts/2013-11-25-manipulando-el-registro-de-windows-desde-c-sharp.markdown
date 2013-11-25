@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Manipulando el registro de windows desde aplicaciones .NET"
+title: "Manipulando el registro de Windows desde aplicaciones .NET"
 date: 2013-11-26 11:00
 comments: true
 categories: []
@@ -8,8 +8,6 @@ published: false
 ---
 
 El registro de windows que tantos dolores de cabeza nos ha dado no es más que una manera de almacenar información en forma de árbol. Se emplea para almacenar preferencias por parte de aplicaciones y por el sistema operativo. En este artículo veremos cómo acceder, almacenar y borrar claves del mismo desde nuestra aplicación.
-
-El registro de Windows nos permite almacenar cierte información, a nivel de usuario, o a nivel global. Es usado también por el sistema operativo y por aplicaciones del mismo, y su abuso, como de todo, no es saludable. En este artículo veremos cómo acceder, almacenar y borrar claves del registro de windows desde nuestra aplicación. 
 
 # Introducción.
 
@@ -19,8 +17,8 @@ Existen múltiples rutas, las 2 más conocidas son
 
 Lo primero que tenemos que entender es que el registro de Windows posee 4 claves fundamentales a las que se nombra de la siguiente manera:
 
-* **HKEY_LOCAL_MACHINE** (o HKLM), que contiene información a nivel global del sistema.
-* **HKEY_CURRENT_USER** (o HKCU), que contiene información relativa a la sesión del usuario actual.
+* **HKEY\_LOCAL\_MACHINE** (o HKLM), que contiene información a nivel global del sistema.
+* **HKEY\_CURRENT\_USER** (o HKCU), que contiene información relativa a la sesión del usuario actual.
 
 Para usar el registro en nuestras aplicaciones necesitamos la siguiente directiva:
 
@@ -71,4 +69,4 @@ En este breve artículo hemos visto cómo crear subclaves de registro, cómo acc
 # Enlaces adicionales
 
 * [Registry Hive](http://pcsupport.about.com/od/termsr/g/registryhive.htm)
-* En MSDN [Registry Key](http://msdn.microsoft.com/en-us/library/microsoft.win32.registrykey(v=vs.110).aspx)
+* En MSDN [Registry Key](http://msdn.microsoft.com/en-us/library/microsoft.win32.registrykey.aspx)
