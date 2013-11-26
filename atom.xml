@@ -1,0 +1,28 @@
+---
+layout: nil
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+ <title>rlbisbe.net</title>
+ <link href="http://rlbisbe.net/atom.xml" rel="self"/>
+ <link href="http://rlbisbe.net/" rel="alternate" type="text/html" />
+ <updated>{{ site.time | date_to_xmlschema }}</updated>
+ <id>http://rlbisbe.net/</id>
+ <author>
+   <name>Roberto Luis Bisbé</name>
+   <email>roberto.luis@rlbisbe.net</email>
+ </author>
+
+ {% for post in site.posts limit:10 %}
+ <entry>
+   <title>{{ post.title }}</title>
+   <link href="http://rlbisbe.net{{ post.url }}?utm_medium=rss"/>
+   <published>{{ post.date | date_to_xmlschema }}</published>
+   <updated>{{ post.date | date_to_xmlschema }}</updated>
+   <id>http://rlbisbe.net{{ post.id }}</id>
+   <content type="html">{{ post.excerpt | xml_escape }}</content>
+ </entry>
+ {% endfor %}
+
+</feed>
