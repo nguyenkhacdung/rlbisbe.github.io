@@ -2,3 +2,4 @@ name: rlbisbe @ dev
 markdown: redcarpet
 pygments: true
 permalink: /:year/:month/:day/:title
+paginate: 5

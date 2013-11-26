@@ -412,6 +412,11 @@ img.wp-smiley,
 	padding: 3%;
 }
 
+.pagination
+{
+	text-align: center;
+}
+
 /* Navigation */
 .site-content nav {
 	clear: both;
