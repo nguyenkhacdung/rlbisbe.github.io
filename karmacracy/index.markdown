@@ -7,7 +7,7 @@ Karmacracy es la app para Windows 8 de la popular red social para compartir enla
 
 Crea una cuenta en [Karmacracy.com](http://www.karmacracy.com) y comienza a compartir!
 
-![Imagen]({{ site.url }}/assets/karmacracy/upload1.png)
+![Imagen](/assets/karmacracy/upload1.png)
 
 # Características
 
@@ -15,4 +15,6 @@ Crea una cuenta en [Karmacracy.com](http://www.karmacracy.com) y comienza a comp
 - Mira las estadísticas de los enlaces y las tuyas propias!
 - Comparte desde la propia aplicación!
 
-Descárgala pronto en la Windows Store.
+Descárgala pronto en la Windows Store. 
+
+[Aviso legal]({{ site.url }}/karmacracy/privacidad)
