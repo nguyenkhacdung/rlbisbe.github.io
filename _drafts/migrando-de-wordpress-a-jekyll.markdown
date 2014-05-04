@@ -1,3 +1,11 @@
+---
+layout: post
+title: "Migrando de Wordpress a Jekyll"
+date: 2013-11-18 17:41
+comments: true
+categories: []
+---
+
 Wordpress es una gran plataforma de gestión de contenidos, y Wordpress.com es un servicio muy potente que da alojamiento a millones de blogs cada día. Sin embargo, para mis necesidades, que son pocas pero muy específicas, no es la primera vez que me da problemas, ya que el editor no se lleva demasiado bien con HTML.
 
 ## Opciones disponibles
